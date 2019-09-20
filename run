@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Must be ok..."
+./checkIBAN "BE62 5100 0754 7061"
+
+echo "Must give error..."
+./checkIBAN "BE62 5100 0744 7061"
+
+echo "Must be ok..."
+./checkIBAN "RO97 RNCB 1800 0001 3888 0001"
+
+echo "Must be ok..."
+./checkIBAN "RO53 RZBR 0000 0600 0237 1186"
+
+
